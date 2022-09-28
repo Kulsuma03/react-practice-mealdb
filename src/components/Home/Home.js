@@ -19,7 +19,7 @@ const Home = () => {
         
         },[]);
 
-        
+        const number = 0
         const handleAddToCart = (food) =>{
             
             const newCart = [...cart, food]
@@ -37,7 +37,7 @@ const Home = () => {
             //            newCart = [...rest, exist]
             //         }
 
-            setCart(newCart)
+            
         }
         
 
