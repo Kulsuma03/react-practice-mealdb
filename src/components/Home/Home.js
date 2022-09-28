@@ -23,20 +23,17 @@ const Home = () => {
         const handleAddToCart = (food) =>{
             
             let newCart = []
-            
-            
-            
+           
             const exist = cart.find(meal => meal.idMeal === food.idMeal)
                     if(!exist){
                    
-                     
                      newCart = [...cart, food]
                     
                     }else{
                        const rest = cart.filter(meal => meal.idMeal !== food.idMeal);
                     
-                      
-                       newCart = [...rest, exist]
+                    //    newCart = [...rest, exist]
+                    return
                     }
 
                     setCart(newCart)
