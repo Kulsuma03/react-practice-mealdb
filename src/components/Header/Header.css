@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto&display=swap');
+.header{
+    background-color: rgb(40, 21, 51);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+
+}
+.header a{
+    text-decoration: none;
+}
+.logo-area{
+    background-color: wheat;
+    padding: 5px;
+}
+
+.logo{
+    font-size: 25px;
+    font-family: 'Bungee Spice', cursive;
+}
+.header-link a{
+    color: rgb(238, 230, 230);
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.header-link a:hover{
+    color: rgb(218, 112, 74);
+    background-color: wheat;
+    
+}

@@ -1,0 +1,19 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 100px 50px;
+    grid-gap: 20px;
+}
+/* .cart{
+    overflow: hidden;
+    position: relative;
+} */
+.cart-container{
+    
+    background-color: #F5DEB3;
+    
+    align-self: start;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+}
