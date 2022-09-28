@@ -12,9 +12,12 @@ const Cart = ({cart}) => {
             <h3 className='cart-heading'>Food Quantity {cart.length}</h3>
             <div>
                 <ol>{cart.map(food => 
-                    <li className='cart-food' key={food.idMeal}>
+                    <li  key={food.idMeal}>
+                    <div className='cart-food'>
                     <h4>{food.strMeal}</h4>
                     <img src={food.strMealThumb} alt="" />
+                    </div>
+                    
                     </li>)} 
                 </ol>
             </div>

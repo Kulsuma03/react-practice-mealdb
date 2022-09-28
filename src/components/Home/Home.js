@@ -19,25 +19,27 @@ const Home = () => {
         
         },[]);
 
-        const number = 0
+        
         const handleAddToCart = (food) =>{
             
-            const newCart = [...cart, food]
-            setCart(newCart)
+            let newCart = []
             
-            // let newCart = [];
-            // const exist = cart.find(meal => meal.idMeal === food.idMeal)
-            //         if(!exist){
+            
+            
+            const exist = cart.find(meal => meal.idMeal === food.idMeal)
+                    if(!exist){
                    
-            //          newCart = [...cart, food];
+                     
+                     newCart = [...cart, food]
                     
-            //         }else{
-            //            const rest = cart.filter(meal => meal.idMeal !== food.idMeal);
+                    }else{
+                       const rest = cart.filter(meal => meal.idMeal !== food.idMeal);
                     
-            //            newCart = [...rest, exist]
-            //         }
+                      
+                       newCart = [...rest, exist]
+                    }
 
-            
+                    setCart(newCart)
         }
         
 
@@ -55,6 +57,7 @@ const Home = () => {
             <div className='cart-container'>
                 <Cart 
                 cart={cart}
+               
                 ></Cart>
             </div>
             </div>
